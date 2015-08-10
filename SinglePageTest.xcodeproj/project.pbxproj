@@ -13,6 +13,10 @@
 		C37255601B749D8C00BA6B9F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C372555F1B749D8C00BA6B9F /* Images.xcassets */; };
 		C37255631B749D8C00BA6B9F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C37255611B749D8C00BA6B9F /* LaunchScreen.xib */; };
 		C372556F1B749D8C00BA6B9F /* SinglePageTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372556E1B749D8C00BA6B9F /* SinglePageTestTests.swift */; };
+		C372557C1B74A27800BA6B9F /* OffButton.png in Resources */ = {isa = PBXBuildFile; fileRef = C372557A1B74A27800BA6B9F /* OffButton.png */; };
+		C372557D1B74A27800BA6B9F /* OnButton.png in Resources */ = {isa = PBXBuildFile; fileRef = C372557B1B74A27800BA6B9F /* OnButton.png */; };
+		C37255AF1B7864B700BA6B9F /* OriginalTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37255AE1B7864B700BA6B9F /* OriginalTabBarController.swift */; };
+		C37255B51B786E8400BA6B9F /* ImageSource in Resources */ = {isa = PBXBuildFile; fileRef = C37255B41B786E8400BA6B9F /* ImageSource */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		C37255681B749D8C00BA6B9F /* SinglePageTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SinglePageTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C372556D1B749D8C00BA6B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C372556E1B749D8C00BA6B9F /* SinglePageTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePageTestTests.swift; sourceTree = "<group>"; };
+		C372557A1B74A27800BA6B9F /* OffButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OffButton.png; path = ../../../HomeRemocon/HomeRemocon/HomeRemocon/ImageSource/OffButton.png; sourceTree = "<group>"; };
+		C372557B1B74A27800BA6B9F /* OnButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OnButton.png; path = ../../../HomeRemocon/HomeRemocon/HomeRemocon/ImageSource/OnButton.png; sourceTree = "<group>"; };
+		C37255AE1B7864B700BA6B9F /* OriginalTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginalTabBarController.swift; sourceTree = "<group>"; };
+		C37255B41B786E8400BA6B9F /* ImageSource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ImageSource; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +85,16 @@
 		C37255551B749D8C00BA6B9F /* SinglePageTest */ = {
 			isa = PBXGroup;
 			children = (
+				C37255B41B786E8400BA6B9F /* ImageSource */,
+				C372557A1B74A27800BA6B9F /* OffButton.png */,
+				C372557B1B74A27800BA6B9F /* OnButton.png */,
 				C37255581B749D8C00BA6B9F /* AppDelegate.swift */,
 				C372555A1B749D8C00BA6B9F /* ViewController.swift */,
 				C372555C1B749D8C00BA6B9F /* Main.storyboard */,
 				C372555F1B749D8C00BA6B9F /* Images.xcassets */,
 				C37255611B749D8C00BA6B9F /* LaunchScreen.xib */,
 				C37255561B749D8C00BA6B9F /* Supporting Files */,
+				C37255AE1B7864B700BA6B9F /* OriginalTabBarController.swift */,
 			);
 			path = SinglePageTest;
 			sourceTree = "<group>";
@@ -161,6 +173,7 @@
 				TargetAttributes = {
 					C37255521B749D8C00BA6B9F = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 582LEGWZJK;
 					};
 					C37255671B749D8C00BA6B9F = {
 						CreatedOnToolsVersion = 6.4;
@@ -194,7 +207,10 @@
 			files = (
 				C372555E1B749D8C00BA6B9F /* Main.storyboard in Resources */,
 				C37255631B749D8C00BA6B9F /* LaunchScreen.xib in Resources */,
+				C37255B51B786E8400BA6B9F /* ImageSource in Resources */,
+				C372557C1B74A27800BA6B9F /* OffButton.png in Resources */,
 				C37255601B749D8C00BA6B9F /* Images.xcassets in Resources */,
+				C372557D1B74A27800BA6B9F /* OnButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C37255AF1B7864B700BA6B9F /* OriginalTabBarController.swift in Sources */,
 				C372555B1B749D8C00BA6B9F /* ViewController.swift in Sources */,
 				C37255591B749D8C00BA6B9F /* AppDelegate.swift in Sources */,
 			);
@@ -340,7 +357,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SinglePageTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -350,7 +369,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SinglePageTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -409,6 +430,7 @@
 				C37255741B749D8C00BA6B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C37255751B749D8C00BA6B9F /* Build configuration list for PBXNativeTarget "SinglePageTestTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +439,7 @@
 				C37255771B749D8C00BA6B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
